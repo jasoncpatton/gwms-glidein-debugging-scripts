@@ -57,7 +57,7 @@ find . -type f 1>&2
 info
 info "$0 contents of glidein_config $glidein_config"
 info
-cat $glidein_config 1>&2
+cat ${glidein_config:-/dev/null} 1>&2
 info
 
 ### ---
